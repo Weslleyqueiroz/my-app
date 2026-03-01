@@ -1,5 +1,6 @@
 import { Text, View, ScrollView } from 'react-native';
-import { Header } from '../components/header';
+import { Header } from '../components/header/register';
+import { Register } from '../components/form';
 
 import Constants from 'expo-constants'
 
@@ -16,8 +17,14 @@ export default function Index() {
 
         <View className='w-full px-4' style = {{marginTop: statusBarHeight +8}}>
             <Header/>
+            
+        </View>
+
+        <View className='w-full'>
+          <Register/>
         </View>
         
     </ScrollView>
   );
+
 }
