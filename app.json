@@ -9,9 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier": "com.googleauth.myapp",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.googleauth.myapp",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -26,6 +28,12 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.809328613635-tgm519snajresma6bi5hvuorff6bs5dt"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -43,6 +51,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dd460246-f6db-4a4e-bfce-a8e64a6af413"
+      }
     }
   }
 }
