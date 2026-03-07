@@ -1,10 +1,13 @@
 import { View, Text, Pressable} from "react-native";
 import {Ionicons, Feather} from "@expo/vector-icons"
+import { useState } from "react";
 
 
 
-export function Header(){
+export function Screens(){
+
     return(
+
         <View className=" w-full flex flex-row items-center justify-between">
             <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
                 <Ionicons name="menu" size={20} color= "#6B8DF2"/>
