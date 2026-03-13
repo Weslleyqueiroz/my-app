@@ -1,6 +1,7 @@
 import { View, Text, Pressable} from "react-native";
 import {Ionicons, Feather} from "@expo/vector-icons"
 import { useState } from "react";
+import React from "react";
 
 
 

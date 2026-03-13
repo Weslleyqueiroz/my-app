@@ -1,8 +1,8 @@
 import Constants from 'expo-constants';
 import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
-import { Register } from '../components/form';
-import { Screens } from '../components/header/register';
+import { RegisterForm } from '../Screens/form';
+import { Screens } from '../Screens/register'
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -24,7 +24,7 @@ export default function Index() {
                     
                     <View className='mt-4'>
                   
-                        <Register /> 
+                        <Screens /> 
                     </View>
                 </View>
             </ScrollView>
